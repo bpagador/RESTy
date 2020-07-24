@@ -1,6 +1,6 @@
 import React from 'react';
-import Form from '../Form/Form';
+import MainContainer from '../../containers/MainContainer';
 
 export default function App() {
-  return <Form/>;
+  return <MainContainer/>;
 }
