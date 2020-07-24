@@ -1,20 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import ReactJson from 'react-json-view';
 
 const Display = ({ response }) => (
-  <>
-    <textarea readOnly name="response">
-      <pre>
-        <ReactJson src={response} />
-      </pre>
-    </textarea>
-    
-  </>
+  <pre>
+    {JSON.stringify(response)}
+  </pre>
 );
 
+
 Display.propTypes = {
-  response: PropTypes.shape.isRequired
+  response: PropTypes.string.isRequired
 };
 
 export default Display; 
